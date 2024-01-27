@@ -2,15 +2,103 @@
   min-height: 80vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 0.5fr));
+  gap: 20px;
   justify-items: center;
+  align-items: end;
 }
 
 .book {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+
 }
 
 img {
-  width: 300px;
-  height: 400px;
+  width: 130px;
+  height: 210px;
+
+}
+
+
+
+.book-title {
+  padding-top: 35px;
+  font-size: 1.1rem;
+
+}
+
+button {
+  width: 120px;
+  height: auto;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-image: url("../../../public/heart.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: right;
+  background-color: rgb(215, 210, 202);
+  border-radius: 5px;
+}
+
+
+@media (min-width:680px) {
+  .book-list {
+    min-height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  img {
+    width: 200px;
+    height: 300px;
+    transition: all 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  .book-title {
+    font-size: 1.3rem;
+  }
+
+  button {
+    width: 200px;
+    height: 30px;
+    background-size: 30px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .book-list {
+    min-height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .book-title {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 80%;
+    height: 50px;
+    background-size: 40px;
+    font-size: 1rem;
+  }
 }
