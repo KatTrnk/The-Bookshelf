@@ -12,8 +12,6 @@ export const BookList = () => {
   const { favorites, addToFavorites, removeFromFavorites } = useAppContext();
   const navigate = useNavigate();
 
-  console.log('favrites are', favorites);
-
   const favoritesChecker = (id) => {
     const boolean = favorites.some((book) => book.id === id);
     return boolean;

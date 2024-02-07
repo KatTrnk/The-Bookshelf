@@ -6,14 +6,14 @@
 }
 
 body {
-  background-color: antiquewhite;
-
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (min-width:1200px) {
   body {
-    background-color: antiquewhite;
-    margin-right: 80px;
-    margin-left: 80px;
+    background-color: white;
+    margin-right: 100px;
+    margin-left: 100px;
   }
 }

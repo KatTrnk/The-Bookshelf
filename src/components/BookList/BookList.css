@@ -37,12 +37,16 @@ button {
   text-align: center;
   font-size: 0.7rem;
   font-weight: bold;
-  background-image: url("../../../public/heart.png");
-  background-repeat: no-repeat;
+  /* background-image: url("../../../public/heart2.png"); */
+  /* background-repeat: no-repeat;
   background-size: 15px;
-  background-position: right;
-  background-color: rgb(215, 210, 202);
+  background-position: right; */
+  /* background-color: rgb(215, 210, 202); */
   border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 a {
@@ -59,12 +63,15 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+
   }
 
   img {
     width: 200px;
     height: 300px;
     transition: all 0.3s ease;
+
+
   }
 
   img:hover {

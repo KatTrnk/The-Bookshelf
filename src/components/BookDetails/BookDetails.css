@@ -12,7 +12,7 @@ img {
 }
 
 
-.book-details-title {
+.book-image {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -23,7 +23,11 @@ img {
 
 }
 
-.book-details-text {
+img:hover {
+  cursor: pointer;
+}
+
+.book-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -44,7 +48,7 @@ img {
     align-items: start;
   }
 
-  .book-details-title {
+  .book-image {
     margin-left: 20px;
   }
 
@@ -54,7 +58,7 @@ img {
 
   }
 
-  .book-details-text {
+  .book-text {
     text-align: justify;
     margin-right: 20px;
     margin-top: 25px;
@@ -77,7 +81,7 @@ img {
 
   }
 
-  .book-details-text {
+  .book-text {
     margin-top: 60px;
   }
 }

@@ -18,11 +18,11 @@ export const BookDetails = () => {
   }, [id]);
   return (
     <div className="book-details">
-      <div className="book-details-title">
+      <div className="book-image">
         <h2>{book.title}</h2>
         <img src={book.image_url} alt="book cover" />
       </div>
-      <div className="book-details-text">
+      <div className="book-text">
         <h3>Authors</h3>
         <p>{book.authors}</p>
         <h3>Description</h3>
